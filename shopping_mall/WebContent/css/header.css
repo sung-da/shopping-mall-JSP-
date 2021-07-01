@@ -1,18 +1,13 @@
-@charset "EUC-KR";
-/* ----°øÅë---- */
+@charset "UTF-8";
 *{
-  /* padding, margin ÃÊ±âÈ­ */
+  /* padding, margin ì´ˆê¸°í™” */
   margin: 0;
   padding: 0;
 }
 a{
-  /* aÅÂ±×ÀÇ ¹ØÁÙÀ» ¾ø¾Ö°í »ö»ó ¹Ù²Þ */
+  /* aíƒœê·¸ì˜ ë°‘ì¤„ì„ ì—†ì• ê³  ìƒ‰ìƒ ë°”ê¿ˆ */
   text-decoration: none;
   color: inherit;
-}
-ul, li {
-  /* ¾Õ¿¡ÀÖ´Â ±Û¸Ó¸®Ç¥ Áö¿ò */
-  list-style: none;
 }
 
 /* ----header---- */
@@ -20,30 +15,69 @@ header {
   border-bottom: 1px solid #ddd;
 }
 header > div {
+  /*hearder ì¢Œìš° 90%ì‚¬ìš© ë†’ì´ëŠ” 150px*/
   width: 90%;
   min-width: 1000px;
   max-width: 1200px;
-  height: 80px;
+  /* height: 80px; */
+  height: 150px;
   margin: 0 auto;
 }
 header .logo{
   float: left;
 }
 header .logo img {
-  /* ·Î°íÀÌ¹ÌÁö¸¦ È­¸é »ó´Ü¿¡¼­ 10px ¶³¾îÁü */
-  height: 60px;
-  margin-top: 10px;
+  /* ë¡œê³ ì´ë¯¸ì§€ë¥¼ í™”ë©´ ìƒë‹¨ì—ì„œ 25px ë–¨ì–´ì§ */
+  height: 100px;
+  margin-top: 25px;
 }
-header .gnb{
+header .serviceArea{
   float: right;
 }
-header .gnb li {
-  /* ¼¼·Î->°¡·Î(ÇÑ ÁÙ·Î) ¿ÞÂÊÀ¸·Î 30px ¸Ö¾îÁü */
+header .serviceArea li {
+  /* ì„¸ë¡œ->ê°€ë¡œ(í•œ ì¤„ë¡œ) ì™¼ìª½ìœ¼ë¡œ 30px ë©€ì–´ì§ */
   display: inline-block;
   margin-top: 5px;
   margin-left: 20px;
+  font-size: 13px;
 }
-header .gnb li:first-child {
-  /* Ã¹¹øÂ° ¸Þ´º´Â ¿ÞÂÊÀ¸·Î ¸¶ÁøÀÌ ÇÊ¿ä ¾ø±â ¶§¹®¿¡ 0À¸·Î ÁÜ */
-  margint-left: 0;
+header .serviceArea li:first-child {
+  /* ì²«ë²ˆì§¸ ë©”ë‰´ëŠ” ì™¼ìª½ìœ¼ë¡œ ë§ˆì§„ì´ í•„ìš” ì—†ê¸° ë•Œë¬¸ì— 0ìœ¼ë¡œ ì¤Œ */
+  margin-left: 0;
+}
+
+/*-----nav-----*/
+header > nav {
+   width: 65%;
+   height: 50px;
+   margin: 0 auto;
+ }
+.gnb {
+  list-style: none;
+  display: inline-block;
+  margin-left:
+}
+.gnb > li {
+  float:left;
+  padding: 14px 26px;
+}
+.searchArea{
+  float: right;
+  padding: 13px;
+  border: 1px;
+}
+.searchArea input[type=search]{
+  padding: 6px;
+  margin-top : -5px;
+  /* border: none; */
+  font-size: 15px;
+}
+.searchArea button{
+  float: right;
+  padding: 6px;
+  margin-top : -3px;
+  margin-right: 15px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
 }

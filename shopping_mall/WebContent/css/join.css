@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.join_box{
+  width: 400px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+.join_box h2{
+	text-align: center;
+}
+.join_box table{
+  margin-left:auto;
+  margin-right: auto;
+}
