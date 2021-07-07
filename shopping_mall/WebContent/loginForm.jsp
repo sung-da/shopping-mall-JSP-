@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>로그인</title>
-<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="css/login.css?ver=2">
 </head>
 <body>
 
@@ -19,14 +19,17 @@
 			<div class="login_area">
 				<input type="text" name="id" id="userid" maxlength="20" placeholder="ID">
 				<br>
-				<input type="password" name="pw" id="pw" placeholder="PASSWORD">
+				<input type="password" name="pwd" id="pwd" placeholder="PASSWORD">
 				<br>
 				<input type="submit" value="로그인">
 				<br>
-				<input type="button" value="회원가입">
+				<input type="button" value="회원가입" onclick="location.href='joinForm.jsp'">
 			</div>
 		</form>
 	</div>
+	
+ <br>
+ <jsp:include page="footer.jsp"/> 
 
 </body>
 </html>

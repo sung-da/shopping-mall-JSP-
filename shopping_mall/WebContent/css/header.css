@@ -1,83 +1,76 @@
 @charset "UTF-8";
-*{
-  /* padding, margin 초기화 */
-  margin: 0;
-  padding: 0;
+
+
+header {
+  width: 1200px;
+  height: 200px;
+  margin: auto;
+}
+li {
+  list-style: none;
 }
 a{
-  /* a태그의 밑줄을 없애고 색상 바꿈 */
-  text-decoration: none;
+  text-decoration: inherit;
   color: inherit;
 }
-
-/* ----header---- */
-header {
-  border-bottom: 1px solid #ddd;
-}
-header > div {
-  /*hearder 좌우 90%사용 높이는 150px*/
-  width: 90%;
-  min-width: 1000px;
-  max-width: 1200px;
-  /* height: 80px; */
-  height: 150px;
-  margin: 0 auto;
-}
-header .logo{
-  float: left;
-}
-header .logo img {
-  /* 로고이미지를 화면 상단에서 25px 떨어짐 */
-  height: 100px;
-  margin-top: 25px;
-}
-header .serviceArea{
-  float: right;
-}
-header .serviceArea li {
-  /* 세로->가로(한 줄로) 왼쪽으로 30px 멀어짐 */
-  display: inline-block;
-  margin-top: 5px;
-  margin-left: 20px;
+/*---serviceArea---*/
+.serviceArea {
+  height: 30px;
+  text-align: right;
+  margin-bottom: 5px;
   font-size: 13px;
 }
-header .serviceArea li:first-child {
-  /* 첫번째 메뉴는 왼쪽으로 마진이 필요 없기 때문에 0으로 줌 */
-  margin-left: 0;
+.serviceArea li {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-/*-----nav-----*/
-header > nav {
-   width: 65%;
-   height: 50px;
-   margin: 0 auto;
- }
-.gnb {
-  list-style: none;
-  display: inline-block;
-  margin-left:
+/*---logo---*/
+.logo {
+  display: flex;
+  justify-content: center;
 }
-.gnb > li {
-  float:left;
-  padding: 14px 26px;
-}
-.searchArea{
-  float: right;
-  padding: 13px;
-  border: 1px;
-}
-.searchArea input[type=search]{
-  padding: 6px;
-  margin-top : -5px;
-  /* border: none; */
-  font-size: 15px;
-}
-.searchArea button{
-  float: right;
-  padding: 6px;
-  margin-top : -3px;
-  margin-right: 15px;
-  border: none;
-  background-color: #ddd;
+.logo img {
+  height: 100px;
   cursor: pointer;
+}
+
+/*---nav---*/
+.gnb {
+  width: 85%;
+  height: 50px;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.gnb > ul {
+  display: inline-block;
+  padding: 0 10px;
+}
+.gnb ul > li {
+  display: inline-block;
+}
+.gnb li > a {
+  padding: 10px;
+  display: block;
+}
+.gnb li {
+  position: relative;
+}
+.gnb ul ul {
+  display: none;
+  position:absolute;
+  top:100%
+}
+.gnb li:hover > ul {
+  display: block;
+}
+/*---searchArea---*/
+.searchArea {
+  margin-left: 350px;
+}
+.searchArea input {
+  padding: 5px;
 }

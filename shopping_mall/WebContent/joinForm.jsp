@@ -5,7 +5,9 @@
 <head>
 <meta charset="UTF-8">
   <title>회원가입</title>
-  <link rel="stylesheet" type="text/css" href="css/join.css">
+  <link rel="stylesheet" type="text/css" href="css/join.css?ver=1">
+
+
 </head>
 
 <body>
@@ -16,16 +18,16 @@
     <h2>회원가입</h2>
     <br>
 
-    <form method="post" action="" name="userInfo">
+    <form method="post" action="joinOK.jsp">
       <table>
         <tr>
           <td>아이디</td>
-          <td><input type="text" name="userid"></td>
+          <td><input type="text" name="userid" size="20"></td>
         </tr>
 
         <tr>
           <td>비밀번호</td>
-          <td><input type="password" name="password"></td>
+          <td><input type="password" name="pwd" size="20"></td>
         </tr>
 
         <tr>
@@ -50,30 +52,16 @@
 
         <tr>
           <td>주소</td>
-          <td><input type="text" name="userid" value=""></td>
-        </tr>
-
-        <tr>
-          <td>성별</td>
-          <td>
-            <input type="radio" name="gender" value="남자" checked> 남자
-            <input type="radio" name="gender" value="여자"> 여자
-          </td>
-        </tr>
-
-        <tr>
-          <td>생년월일</td>
-          <td>
-            <input type="date" name="birth" maxlength="8" placeholder="YYYYMMDD">
-          </td>
+          <td><input type="text" name="address"></td>
         </tr>
         
         <tr>
-     		<td><input type="submit" name="join" value="가입"></tr>
+     		<td><input type="submit" value="가입">
+     	</tr>
       </table>   
     </form>
   </div>
-  
-  
+ <br>
+ <jsp:include page="footer.jsp"/> 
 </body>
 </html>
