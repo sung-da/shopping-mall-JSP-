@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
   <title>회원가입</title>
-  <link rel="stylesheet" type="text/css" href="css/join.css?ver=1">
+  <link rel="stylesheet" type="text/css" href="css/join.css?ver=2">
 
 
 </head>
@@ -56,7 +56,8 @@
         </tr>
         
         <tr>
-     		<td><input type="submit" value="가입">
+        	<td></td>
+     		<td><input type="submit" value="가입"></td>
      	</tr>
       </table>   
     </form>

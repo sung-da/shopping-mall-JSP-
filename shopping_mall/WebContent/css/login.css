@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .login_box {
-	width: 300px;
+	width: 200px;
 	margin-left:auto;
 	margin-right: auto;
 	margin-top: 10vh;
@@ -9,4 +9,19 @@
 }
 .login_box h2{
 	text-align: center;
+}
+.login_area {
+  text-align: center;
+}
+.login_area input{
+  padding:5px;
+  margin-top: 3px;
+}
+.login_area input[type=text],
+.login_area input[type=password]{
+  width:90%;
+}
+.login_area input[type=submit],
+.login_area input[type=button]{
+  width:100%;
 }

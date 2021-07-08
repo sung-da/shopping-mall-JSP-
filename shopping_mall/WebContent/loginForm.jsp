@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>로그인</title>
-<link rel="stylesheet" type="text/css" href="css/login.css?ver=2">
+<link rel="stylesheet" type="text/css" href="css/login.css?ver=3">
 </head>
 <body>
 
@@ -22,7 +22,6 @@
 				<input type="password" name="pwd" id="pwd" placeholder="PASSWORD">
 				<br>
 				<input type="submit" value="로그인">
-				<br>
 				<input type="button" value="회원가입" onclick="location.href='joinForm.jsp'">
 			</div>
 		</form>
