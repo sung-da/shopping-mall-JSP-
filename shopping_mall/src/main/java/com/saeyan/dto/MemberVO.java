@@ -4,9 +4,11 @@ public class MemberVO {
 	private String userid;
 	private String pwd;
 	private String name;
-	private int phone;
+	private String phone;
 	private String email;
 	private String address;
+	
+	
 	public String getUserid() {
 		return userid;
 	}
@@ -25,10 +27,10 @@ public class MemberVO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public String getEmail() {
